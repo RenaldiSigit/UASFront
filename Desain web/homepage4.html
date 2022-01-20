@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script>
+        $(document).ready(function(){
+            // halaman default
+            $('#konten').load('home.php');
+
+            // fungsi yang mengatur konten mana yang akan ditampilkan
+            $('#menu a').click(function(){
+                // mengambil data dari href
+                var hal = $(this).attr('href');
+                // konten akan diisi oleh menu yang dipilih sesuai dengan isi dari href yang dipilih
+                $('#konten').load(hal+'.php');
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>

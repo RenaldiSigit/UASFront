@@ -8,6 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function () {
+          $("#Log-btn").click(function(){
+              FontFaceSetLoadEvent
+            alert("Berhasil Login")
+          }
+          )
+        });
+      </script>
 </head>
 
 <body>
@@ -39,7 +49,7 @@
                                     required>
                             </div>
                             <div class="form-group">
-                                <a href="homepage3.html" type="submit" class="form-control btn btn-primary submit px-3">Log In</a>
+                                <a href="homepage3.html" type="submit" class="form-control btn btn-primary submit px-3" id="Log-btn">Log In</a>
                             </button>
                             </div>
                             <div class="fs-6">Belum Punya akun?Silahkan Daftar <a href="Singup.html">Disini</a></div>
